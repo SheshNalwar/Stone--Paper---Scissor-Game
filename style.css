@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    top: 10%;
+    justify-content: center;
+    background-color: #DBE7C9;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #294B29;
+}
+
+.choices {
+    height: 20vw;
+    width: 60vw;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.choices img {
+    height: 12vw;
+    width: 12vw;
+    border: none;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.scores {
+    height: 10vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    text-align: center;
+}
+
+.score {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #294B29;
+}
+
+.msg-container {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+#msg {
+    background-color: #789461;
+    padding: 2vh 4vh;
+    border-radius: 10px;
+    font-size: 3vh;
+    color: #DBE7C9;
+    display: inline;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width : 600px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container h1  {
+        font-size: 6vw;
+    }
+
+    .choices {
+        height: 20vh;
+        width: 100vw;
+        padding: 0 10vw ;
+    }
+
+    .choices img{
+        height: 25vw;
+        width: 25vw;
+    }
+
+    .choices img:hover {
+        scale: 1;
+    }
+
+    .scores{
+        height: 10vh;
+        width: 70vw;
+        gap: 10vw;
+    }
+
+    .score {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    #msg {
+        line-height: 2.5;
+        font-weight: 700;
+        text-wrap: wrap;
+        padding: 2vh 3vw;
+    }
+}
