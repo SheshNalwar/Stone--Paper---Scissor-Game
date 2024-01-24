@@ -28,7 +28,7 @@ const showWinner = (userWin, userChoice, compChoice) => {
     else {
         compScore++;
         compScorePara.innerHTML = compScore;
-        msg.innerHTML =`Khelna seekh le💔😭! Computer's ${userChoice} beats ${userChoice}`;
+        msg.innerHTML =`Khelna seekh le💔😭! Computer's ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
 }
