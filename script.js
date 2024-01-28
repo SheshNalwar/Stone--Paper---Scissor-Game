@@ -14,7 +14,7 @@ const genCompChoice = () => {
 
 const drawGame = () => {
     console.log("Draw Game");
-    msg.innerHTML = "Game was Drawn😏😤! Play again";
+    msg.innerHTML = "Game was Drawn😏😤! Phir se khel";
     msg.style.backgroundColor = "#789461";
 }
 
